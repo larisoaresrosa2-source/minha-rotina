@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iIzVFN0E1MCIvPgogIDxnIG9wYWNpdHk9IjAuMiIgZmlsbD0iIzExMTExMSI+CiAgICA8ZWxsaXBzZSBjeD0iMjU2IiBjeT0iMzIwIiByeD0iMTM1IiByeT0iMTE4Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjE0MiwyMjggMTE4LDE1NSAxOTgsMjEyIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjM3MCwyMjggMzk0LDE1NSAzMTQsMjEyIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzAwIgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIgogICAgZm9udC1zaXplPSIxNzgiCiAgICBmb250LXdlaWdodD0iYm9sZCIKICAgIGZpbGw9IndoaXRlIgogICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiCiAgICBsZXR0ZXItc3BhY2luZz0iLTYiCiAgICBvcGFjaXR5PSIwLjk1Ij5MUjwvdGV4dD4KPC9zdmc+">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iIzVFN0E1MCIvPgogIDxnIG9wYWNpdHk9IjAuMiIgZmlsbD0iIzExMTExMSI+CiAgICA8ZWxsaXBzZSBjeD0iMjU2IiBjeT0iMzIwIiByeD0iMTM1IiByeT0iMTE4Ii8+CiAgICA8cG9seWdvbiBwb2ludHM9IjE0MiwyMjggMTE4LDE1NSAxOTgsMjEyIi8+CiAgICA8cG9seWdvbiBwb2ludHM9IjM3MCwyMjggMzk0LDE1NSAzMTQsMjEyIi8+CiAgPC9nPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzAwIgogICAgZm9udC1mYW1pbHk9Ikdlb3JnaWEsIHNlcmlmIgogICAgZm9udC1zaXplPSIxNzgiCiAgICBmb250LXdlaWdodD0iYm9sZCIKICAgIGZpbGw9IndoaXRlIgogICAgdGV4dC1hbmNob3I9Im1pZGRsZSIKICAgIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiCiAgICBsZXR0ZXItc3BhY2luZz0iLTYiCiAgICBvcGFjaXR5PSIwLjk1Ij5MUjwvdGV4dD4KPC9zdmc+">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Minha Rotina">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotina da Larissa</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,500;0,600;1,500&display=swap');
+:root{
+  --cream:#F6F2ED;--white:#FFF;--olive:#5E7A50;--olivl:#8AA87A;--olivxl:#D4E6CB;
+  --terra:#B8693E;--terral:#D9956E;--terraxl:#F3DDD1;--sand:#E4D9CC;
+  --dark:#252320;--mid:#7A7068;--light:#B5AFA8;
+  --water:#4F8FA8;--waterl:#A0C8DB;--waterxl:#DDF0F7;
+  --purp:#7060A0;--purpl:#B0A0D0;--purpxl:#EDE8F8;
+  --gold:#C09030;--goldl:#E8C870;--goldxl:#FDF5E0;
+  --gok:#4A7A58;--sh:0 2px 10px rgba(0,0,0,.07);--r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--dark);min-height:100vh;max-width:430px;margin:0 auto;padding-bottom:80px;}
+
+/* HEADER */
+.hdr{background:var(--white);padding:16px 16px 0;border-bottom:1px solid var(--sand);position:sticky;top:0;z-index:50;}
+.hdr-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;}
+.greet{font-family:'Lora',serif;font-size:20px;font-weight:600;line-height:1.25;}
+.greet em{font-style:italic;color:var(--terra);}
+.chip{background:var(--sand);border-radius:20px;padding:4px 11px;font-size:11px;font-weight:700;color:var(--mid);white-space:nowrap;margin-top:3px;}
+
+/* RING */
+.ring-sec{background:var(--white);display:flex;flex-direction:column;align-items:center;padding:16px 16px 18px;}
+.ring-lbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--mid);margin-bottom:10px;}
+.ring-wrap{position:relative;width:96px;height:96px;}
+.ring-svg{width:96px;height:96px;transform:rotate(-90deg);}
+.r-bg{fill:none;stroke:var(--sand);stroke-width:8;}
+.r-fill{fill:none;stroke-width:8;stroke-linecap:round;stroke-dasharray:238;stroke-dashoffset:238;transition:stroke-dashoffset .8s ease,stroke .4s;}
+.ring-ctr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.ring-pct{font-family:'Lora',serif;font-size:22px;font-weight:600;line-height:1;}
+.ring-sub{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--mid);}
+.ring-msg{margin-top:8px;font-size:13px;font-weight:700;color:var(--mid);text-align:center;}
+
+/* TABS */
+.tabs{display:flex;background:var(--white);border-bottom:2px solid var(--sand);overflow-x:auto;scrollbar-width:none;position:sticky;top:84px;z-index:49;}
+.tabs::-webkit-scrollbar{display:none;}
+.tab{flex:1;min-width:60px;padding:10px 4px;font-size:10px;font-weight:800;color:var(--light);text-align:center;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s;white-space:nowrap;text-transform:uppercase;letter-spacing:.4px;}
+.tab.active{color:var(--terra);border-bottom-color:var(--terra);}
+
+/* CONTENT */
+.content{padding:12px;}
+.sec{display:none;} .sec.active{display:block;}
+
+/* CARD */
+.card{background:var(--white);border-radius:var(--r);padding:14px 15px;margin-bottom:10px;box-shadow:var(--sh);}
+
+/* HABIT ROW */
+.hrow{display:flex;align-items:center;gap:11px;padding:11px 13px;background:var(--white);border-radius:14px;margin-bottom:8px;cursor:pointer;border:2px solid transparent;box-shadow:var(--sh);transition:all .2s;}
+.hrow.done{border-color:var(--gok);background:#F0F7F2;}
+.hrow:active{transform:scale(.98);}
+.hico{font-size:20px;flex-shrink:0;width:30px;text-align:center;}
+.hin{flex:1;min-width:0;}
+.hname{font-size:13px;font-weight:700;}
+.hrow.done .hname{color:var(--gok);text-decoration:line-through;text-decoration-color:rgba(74,122,88,.4);}
+.hdet{font-size:11px;color:var(--mid);font-weight:600;margin-top:1px;}
+.hchk{width:24px;height:24px;border-radius:50%;border:2px solid var(--sand);display:flex;align-items:center;justify-content:center;font-size:12px;color:transparent;flex-shrink:0;transition:all .2s;}
+.hrow.done .hchk{background:var(--gok);border-color:var(--gok);color:white;}
+
+/* WATER */
+.wtr-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:11px;}
+.wtr-ttl{font-size:14px;font-weight:700;}
+.wtr-cnt{font-size:13px;font-weight:800;color:var(--water);}
+.glasses{display:flex;gap:6px;flex-wrap:wrap;}
+.glass{width:33px;height:33px;border-radius:9px;border:2px solid var(--waterl);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .15s;opacity:.3;}
+.glass.filled{opacity:1;background:var(--waterxl);border-color:var(--water);transform:scale(1.06);}
+
+/* SUPLEM */
+.supcrd{background:var(--purpxl);border-radius:var(--r);padding:14px;margin-bottom:10px;}
+.suprow{display:flex;align-items:center;gap:11px;padding:8px 0;cursor:pointer;}
+.suprow+.suprow{border-top:1px solid rgba(112,96,160,.15);}
+.supdot{width:9px;height:9px;border-radius:50%;border:2px solid var(--purp);flex-shrink:0;transition:all .2s;}
+.suprow.done .supdot{background:var(--purp);}
+.supname{flex:1;font-size:13px;font-weight:700;color:var(--purp);}
+.suprow.done .supname{text-decoration:line-through;opacity:.55;}
+.supdose{font-size:11px;color:var(--purpl);font-weight:700;}
+
+/* TIP */
+.tip{background:linear-gradient(135deg,var(--olive),var(--olivl));border-radius:var(--r);padding:14px;color:white;margin-bottom:10px;}
+.tip-lbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;opacity:.75;margin-bottom:4px;}
+.tip-txt{font-size:13px;line-height:1.6;font-weight:600;}
+
+/* SEC LABEL */
+.slbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--mid);margin:12px 0 7px 2px;}
+
+/* TREINO */
+.daycrd{background:var(--white);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:8px;}
+.dayhdr{display:flex;align-items:center;gap:10px;padding:12px 13px;cursor:pointer;user-select:none;}
+.daytag{width:34px;height:34px;border-radius:10px;background:var(--terraxl);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:var(--terra);text-transform:uppercase;flex-shrink:0;}
+.daycrd.dd .daytag{background:var(--olivxl);color:var(--olive);}
+.daytit{flex:1;}
+.daytit-main{font-size:13px;font-weight:700;}
+.daytit-sub{font-size:11px;color:var(--mid);font-weight:600;margin-top:1px;}
+.dayarr{font-size:14px;color:var(--light);transition:transform .2s;}
+.daycrd.open .dayarr{transform:rotate(180deg);}
+.daybody{display:none;padding:0 13px 13px;border-top:1px solid var(--sand);}
+.daycrd.open .daybody{display:block;}
+.exlist{display:flex;flex-direction:column;gap:6px;margin-bottom:9px;}
+.exitem{display:flex;align-items:center;gap:7px;background:var(--cream);border-radius:9px;padding:7px 9px;}
+.exitem input{flex:1;border:none;background:transparent;font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;color:var(--dark);outline:none;}
+.exitem input::placeholder{color:var(--light);font-weight:600;}
+.exsets{font-size:11px;font-weight:800;color:var(--terra);background:var(--terraxl);border-radius:6px;padding:3px 7px;white-space:nowrap;cursor:pointer;}
+.exdel{background:none;border:none;cursor:pointer;color:var(--light);font-size:16px;padding:0 2px;}
+.addbtn{width:100%;padding:8px;background:var(--cream);border:2px dashed var(--sand);border-radius:9px;cursor:pointer;font-family:'Nunito',sans-serif;font-size:12px;font-weight:700;color:var(--mid);}
+.donebtn{margin-top:9px;width:100%;padding:10px;background:var(--olive);border:none;border-radius:11px;color:white;font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;cursor:pointer;}
+.daycrd.dd .donebtn{background:var(--sand);color:var(--mid);}
+.eqchip{display:inline-block;padding:3px 8px;background:var(--goldxl);border-radius:20px;font-size:10px;font-weight:800;color:var(--gold);margin:2px 2px 5px 0;}
+
+/* MEAL PLAN */
+.wselbtn{flex-shrink:0;padding:6px 13px;border-radius:20px;border:2px solid var(--sand);background:var(--white);cursor:pointer;font-family:'Nunito',sans-serif;font-size:11px;font-weight:800;color:var(--mid);transition:all .2s;}
+.wselbtn.active{background:var(--terra);border-color:var(--terra);color:white;}
+.mpcard{background:var(--white);border-radius:var(--r);padding:13px 14px;margin-bottom:9px;box-shadow:var(--sh);}
+.mpday{font-size:12px;font-weight:800;color:var(--terra);text-transform:uppercase;letter-spacing:1px;margin-bottom:9px;}
+.mrow{display:flex;gap:9px;padding:7px 0;border-top:1px solid var(--sand);}
+.mtimecol{width:48px;flex-shrink:0;}
+.mtimelbl{font-size:10px;font-weight:800;color:var(--light);text-transform:uppercase;}
+.mtimeval{font-size:11px;font-weight:700;color:var(--mid);}
+.mdesc{flex:1;font-size:12px;font-weight:600;color:var(--dark);line-height:1.5;}
+.mprot{font-size:10px;font-weight:800;color:var(--olive);background:var(--olivxl);border-radius:6px;padding:2px 6px;margin-top:3px;display:inline-block;}
+.mwarn{font-size:10px;font-weight:800;color:#C05050;background:#FFE5E5;border-radius:6px;padding:2px 6px;margin-top:3px;display:inline-block;}
+
+/* SUPLEMENTOS RECOMENDADOS */
+.suprec{background:var(--purpxl);border-radius:var(--r);padding:14px;margin-bottom:10px;}
+.suprecttl{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--purp);margin-bottom:9px;}
+.supitem{display:flex;align-items:flex-start;gap:9px;padding:8px 0;border-top:1px solid rgba(112,96,160,.12);}
+.supitem:first-of-type{border-top:none;}
+.supico{font-size:19px;flex-shrink:0;}
+.supinf{}
+.supinf-name{font-size:13px;font-weight:700;color:var(--purp);}
+.supinf-why{font-size:11px;color:var(--mid);font-weight:600;margin-top:2px;line-height:1.4;}
+.spr{font-size:10px;font-weight:800;border-radius:6px;padding:2px 6px;display:inline-block;margin-top:3px;}
+.spr-hi{background:#FFE5E5;color:#C05050;}
+.spr-md{background:var(--goldxl);color:var(--gold);}
+.spr-lo{background:var(--olivxl);color:var(--olive);}
+
+/* SONO */
+.slpdark{background:linear-gradient(135deg,#1A1530,#2D2050);border-radius:var(--r);padding:17px;margin-bottom:10px;color:white;}
+.slphdr{font-family:'Lora',serif;font-size:16px;font-weight:600;margin-bottom:13px;}
+.slptimes{display:flex;gap:9px;margin-bottom:13px;}
+.slpbox{flex:1;background:rgba(255,255,255,.1);border-radius:11px;padding:11px 7px;text-align:center;}
+.slpbox-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;opacity:.6;margin-bottom:3px;}
+.slpbox-val{font-size:19px;font-weight:800;font-family:'Lora',serif;}
+.slpbtn{width:100%;padding:9px;background:rgba(255,255,255,.12);border:none;border-radius:9px;color:white;font-family:'Nunito',sans-serif;font-size:12px;font-weight:700;cursor:pointer;}
+.cyclecrd{background:var(--white);border-radius:var(--r);padding:13px;margin-bottom:10px;box-shadow:var(--sh);}
+.cycletit{font-size:12px;font-weight:800;color:var(--purp);margin-bottom:9px;}
+.cycleopt{display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:11px;margin-bottom:6px;cursor:pointer;border:2px solid var(--sand);}
+.cycleopt.best{border-color:var(--olive);background:var(--olivxl);}
+.cycleopt.ok{border-color:var(--gold);background:var(--goldxl);}
+.cdot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.best .cdot{background:var(--olive);} .ok .cdot{background:var(--gold);}
+.cinf{flex:1;}
+.ctime{font-size:13px;font-weight:800;}
+.chrs{font-size:11px;font-weight:600;color:var(--mid);}
+.cbdg{font-size:10px;font-weight:800;padding:3px 8px;border-radius:20px;}
+.best .cbdg{background:var(--olive);color:white;} .ok .cbdg{background:var(--gold);color:white;}
+.morncrd{background:var(--goldxl);border-radius:var(--r);padding:13px;margin-bottom:10px;}
+.morntit{font-size:11px;font-weight:800;color:var(--gold);margin-bottom:9px;text-transform:uppercase;letter-spacing:1px;}
+.mornopt{display:flex;align-items:center;gap:9px;padding:8px 0;cursor:pointer;}
+.mornopt+.mornopt{border-top:1px solid rgba(192,144,48,.15);}
+.mornrad{width:17px;height:17px;border-radius:50%;border:2px solid var(--gold);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.mornopt.sel .mornrad{background:var(--gold);}
+.mornopt.sel .mornrad::after{content:'';width:5px;height:5px;border-radius:50%;background:white;}
+.morntxt{font-size:13px;font-weight:700;flex:1;}
+.morndur{font-size:11px;font-weight:800;color:var(--gold);}
+
+/* STATS */
+.statsrow{display:flex;gap:7px;margin-bottom:11px;}
+.statcrd{flex:1;background:var(--white);border-radius:13px;padding:12px 9px;text-align:center;box-shadow:var(--sh);}
+.statnum{font-family:'Lora',serif;font-size:25px;font-weight:600;color:var(--terra);line-height:1;}
+.statlbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.8px;color:var(--mid);margin-top:3px;}
+
+/* WEEK DOTS */
+.wkdots{display:flex;justify-content:space-between;background:var(--white);border-radius:var(--r);padding:12px 14px;margin-bottom:11px;box-shadow:var(--sh);}
+.wday{text-align:center;}
+.wdlbl{font-size:10px;font-weight:700;color:var(--mid);margin-bottom:4px;}
+.wddot{width:26px;height:26px;border-radius:50%;background:var(--sand);display:flex;align-items:center;justify-content:center;font-size:11px;margin:0 auto;}
+.wddot.done{background:var(--olivl);color:white;} .wddot.today{background:var(--terra);color:white;}
+
+/* PROFILE */
+.profcrd{background:var(--white);border-radius:var(--r);padding:14px;box-shadow:var(--sh);margin-bottom:10px;}
+.profrow{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;}
+.profrow+.profrow{border-top:1px solid var(--sand);}
+.profkey{color:var(--mid);font-weight:600;}
+.profval{font-weight:800;}
+
+/* BENCH */
+.benchcrd{background:var(--white);border-radius:var(--r);padding:14px;margin-bottom:10px;box-shadow:var(--sh);}
+.bapp{display:flex;gap:11px;padding:9px 0;}
+.bapp+.bapp{border-top:1px solid var(--sand);}
+.bico{font-size:24px;flex-shrink:0;}
+.bname{font-size:13px;font-weight:800;}
+.bfeat{font-size:12px;color:var(--mid);font-weight:600;margin-top:1px;line-height:1.5;}
+.btag{font-size:10px;font-weight:800;padding:2px 7px;border-radius:20px;display:inline-block;margin-top:3px;}
+.bt-ok{background:var(--olivxl);color:var(--olive);}
+.bt-falt{background:var(--terraxl);color:var(--terra);}
+
+/* GASTRITE ALERT */
+.gastcrd{background:#FFF5F5;border:2px solid #F0C0C0;border-radius:var(--r);padding:14px;margin-bottom:10px;}
+.gasttit{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#C05050;margin-bottom:8px;}
+.gastrow{display:flex;align-items:flex-start;gap:8px;padding:6px 0;font-size:12px;font-weight:600;color:var(--dark);line-height:1.5;}
+
+/* MEDICAMENTOS */
+.medcrd{background:#F0F8FF;border:2px solid var(--waterl);border-radius:var(--r);padding:14px;margin-bottom:10px;}
+.medtit{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--water);margin-bottom:8px;}
+.medrow{display:flex;align-items:center;gap:9px;padding:7px 0;cursor:pointer;}
+.medrow+.medrow{border-top:1px solid rgba(79,143,168,.15);}
+.meddot{width:9px;height:9px;border-radius:50%;border:2px solid var(--water);flex-shrink:0;transition:all .2s;}
+.medrow.done .meddot{background:var(--water);}
+.medname{flex:1;font-size:13px;font-weight:700;color:var(--water);}
+.medrow.done .medname{text-decoration:line-through;opacity:.55;}
+.medwhen{font-size:11px;color:var(--waterl);font-weight:700;}
+
+/* MODAL */
+.moverlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:100;align-items:flex-end;}
+.moverlay.open{display:flex;}
+.modal{background:var(--white);border-radius:22px 22px 0 0;padding:20px 17px 34px;width:100%;max-width:430px;margin:0 auto;}
+.mtit{font-family:'Lora',serif;font-size:17px;font-weight:600;margin-bottom:15px;}
+.trow{display:flex;gap:9px;margin-bottom:14px;}
+.tg{flex:1;}
+.tg-lbl{font-size:10px;font-weight:800;text-transform:uppercase;color:var(--mid);margin-bottom:5px;letter-spacing:1px;}
+.tg input{width:100%;padding:10px 9px;border:2px solid var(--sand);border-radius:11px;font-family:'Nunito',sans-serif;font-size:19px;font-weight:700;color:var(--dark);text-align:center;outline:none;}
+.tg input:focus{border-color:var(--terra);}
+.msave{width:100%;padding:12px;background:var(--terra);border:none;border-radius:13px;color:white;font-family:'Nunito',sans-serif;font-size:14px;font-weight:800;cursor:pointer;}
+
+/* SETS MODAL */
+.setsrow{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px;}
+.setchip{padding:7px 13px;border-radius:20px;border:2px solid var(--sand);background:var(--white);font-family:'Nunito',sans-serif;font-size:12px;font-weight:800;color:var(--mid);cursor:pointer;}
+.setchip.sel{background:var(--terra);border-color:var(--terra);color:white;}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hdr-row">
+    <div>
+      <div class="greet">Olá, <em>Larissa</em> 🌿</div>
+      <div style="font-size:11px;color:var(--mid);font-weight:600;margin-top:2px;" id="subgreet">Sua rotina de hoje</div>
+    </div>
+    <div class="chip" id="datechip">—</div>
+  </div>
+</div>
+
+<div class="ring-sec">
+  <div class="ring-lbl">Energia do dia</div>
+  <div class="ring-wrap">
+    <svg class="ring-svg" viewBox="0 0 86 86">
+      <circle class="r-bg" cx="43" cy="43" r="38"/>
+      <circle class="r-fill" id="ringFill" cx="43" cy="43" r="38"/>
+    </svg>
+    <div class="ring-ctr">
+      <div class="ring-pct" id="ringPct">0%</div>
+      <div class="ring-sub">feitos</div>
+    </div>
+  </div>
+  <div class="ring-msg" id="ringMsg">Vamos lá, Larissa! 🌱</div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('hoje',this)">Hoje</div>
+  <div class="tab" onclick="switchTab('treino',this)">Treino</div>
+  <div class="tab" onclick="switchTab('nutri',this)">Nutri</div>
+  <div class="tab" onclick="switchTab('sono',this)">Sono</div>
+
+  <div class="tab" onclick="switchTab('prog',this)">Eu</div>
+</div>
+
+<div class="content">
+
+<!-- TAB HOJE -->
+<div class="sec active" id="tab-hoje">
+  <div class="card">
+    <div class="wtr-hdr">
+      <div class="wtr-ttl">💧 Água</div>
+      <div class="wtr-cnt"><span id="waterNum">0</span>/8 copos</div>
+    </div>
+    <div class="glasses" id="glassWrap"></div>
+  </div>
+
+  <div class="medcrd">
+    <div class="medtit">💊 Medicamentos de hoje</div>
+    <div class="medrow" id="med-panto" onclick="toggleMed('med-panto')">
+      <div class="meddot"></div><div class="medname">Pantoprazol</div><div class="medwhen">🌅 acordar · jejum</div>
+    </div>
+    <div class="medrow" id="med-levo" onclick="toggleMed('med-levo')">
+      <div class="meddot"></div><div class="medname">Levogastrol</div><div class="medwhen">🍽 almoço</div>
+    </div>
+    <div class="medrow" id="med-prob" onclick="toggleMed('med-prob')">
+      <div class="meddot"></div><div class="medname">Probiótico</div><div class="medwhen">🍽 almoço</div>
+    </div>
+    <div class="medrow" id="med-anti" onclick="toggleMed('med-anti')">
+      <div class="meddot"></div><div class="medname">Anticoncepcional</div><div class="medwhen">🌙 antes de dormir</div>
+    </div>
+    <div class="medrow" id="med-mela" onclick="toggleMed('med-mela')">
+      <div class="meddot"></div><div class="medname">Melatonina</div><div class="medwhen">🌙 antes de dormir</div>
+    </div>
+  </div>
+
+  <div class="supcrd">
+    <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--purp);margin-bottom:7px;">🌿 Suplementos</div>
+    <div class="suprow" id="sup-d3" onclick="toggleSup('sup-d3')">
+      <div class="supdot"></div><div class="supname">Vitamina D3+K2</div><div class="supdose">após café</div>
+    </div>
+    <div class="suprow" id="sup-b12" onclick="toggleSup('sup-b12')">
+      <div class="supdot"></div><div class="supname">Vitamina B12</div><div class="supdose">almoço</div>
+    </div>
+    <div class="suprow" id="sup-prot" onclick="toggleSup('sup-prot')">
+      <div class="supdot"></div><div class="supname">Proteína vegetal (The Good Veg)</div><div class="supdose">pós-treino</div>
+    </div>
+  </div>
+
+  <div class="slbl">Hábitos do dia</div>
+  <div class="hrow" id="h-treino" onclick="toggleH('h-treino')">
+    <div class="hico">🔥</div>
+    <div class="hin"><div class="hname">Treino do dia</div><div class="hdet">Queima Diária ou equipamento em casa</div></div>
+    <div class="hchk">✓</div>
+  </div>
+  <div class="hrow" id="h-manha" onclick="toggleH('h-manha')">
+    <div class="hico">🌅</div>
+    <div class="hin"><div class="hname">Atividade matinal</div><div class="hdet">Leitura, quebra-cabeça, pintura ou caminhada</div></div>
+    <div class="hchk">✓</div>
+  </div>
+  <div class="hrow" id="h-comida" onclick="toggleH('h-comida')">
+    <div class="hico">🥗</div>
+    <div class="hin"><div class="hname">Refeições do plano</div><div class="hdet">Sem gordura, pimenta ou ácido excessivo</div></div>
+    <div class="hchk">✓</div>
+  </div>
+  <div class="hrow" id="h-sono" onclick="toggleH('h-sono')">
+    <div class="hico">🌙</div>
+    <div class="hin"><div class="hname">Dormiu no horário</div><div class="hdet">Ciclos de sono completos</div></div>
+    <div class="hchk">✓</div>
+  </div>
+  <div class="hrow" id="h-sol" onclick="toggleH('h-sol')">
+    <div class="hico">☀️</div>
+    <div class="hin"><div class="hname">15 min de sol em Santiago</div><div class="hdet">Importante pro D3 no inverno chileno</div></div>
+    <div class="hchk">✓</div>
+  </div>
+
+  <div class="tip">
+    <div class="tip-lbl">💡 Dica do dia</div>
+    <div class="tip-txt" id="dailyTip">Você está no começo — isso é o mais difícil e o mais importante. Cada check hoje é uma prova pro seu cérebro de que você consegue. 🐱</div>
+  </div>
+</div>
+
+<!-- TAB TREINO -->
+<div class="sec" id="tab-treino">
+  <div style="background:linear-gradient(135deg,var(--terra),var(--terral));border-radius:var(--r);padding:15px;margin-bottom:11px;color:white;display:flex;gap:11px;align-items:center;">
+    <div style="font-size:30px;">🔥</div>
+    <div>
+      <div style="font-family:'Lora',serif;font-size:15px;font-weight:600;">Queima Diária</div>
+      <div style="font-size:12px;opacity:.85;font-weight:600;">Monte sua semana — você decide os exercícios!</div>
+    </div>
+  </div>
+  <div style="background:var(--goldxl);border-radius:13px;padding:11px 13px;margin-bottom:11px;">
+    <div style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--gold);margin-bottom:5px;">🎒 Equipamentos</div>
+    <span class="eqchip">🚴 Bicicleta ergonômica</span>
+    <span class="eqchip">🟡 Banda baixa</span>
+    <span class="eqchip">🟠 Banda média</span>
+    <span class="eqchip">🔴 Banda alta</span>
+    <span class="eqchip">⚖️ Halteres 0,5kg x2</span>
+  </div>
+  <div class="slbl">Semana atual — toque para editar</div>
+  <div id="weekGrid"></div>
+</div>
+
+<!-- TAB NUTRI -->
+<div class="sec" id="tab-nutri">
+  <div style="background:linear-gradient(135deg,var(--olive),var(--olivl));border-radius:var(--r);padding:15px;margin-bottom:11px;color:white;">
+    <div style="font-family:'Lora',serif;font-size:15px;font-weight:600;margin-bottom:3px;">🥦 Plano Vegetariano · Chile Inverno</div>
+    <div style="font-size:12px;opacity:.85;font-weight:600;">Gastrite + Esofagite adaptado · Marcas chilenas · Meta: emagrecer + proteína</div>
+  </div>
+
+  <div class="gastcrd">
+    <div class="gasttit">⚠️ Gastrite leve + Esofagite grau B — evitar sempre</div>
+    <div class="gastrow"><span>🚫</span> Café, bebidas com gás, álcool, chocolate em excesso</div>
+    <div class="gastrow"><span>🚫</span> Alimentos muito ácidos (limão puro, vinagre, tomate cru em excesso)</div>
+    <div class="gastrow"><span>🚫</span> Frituras, gorduras, alimentos ultraprocessados</div>
+    <div class="gastrow"><span>🚫</span> Pimenta, pimentão cru, alho cru, cebola crua em excesso</div>
+    <div class="gastrow"><span>🚫</span> Deitar logo após comer — esperar 2–3h (Esofagite)</div>
+    <div class="gastrow"><span>✅</span> Pantoprazol em JEJUM, ao acordar, 30 min antes de qualquer coisa</div>
+    <div class="gastrow"><span>✅</span> Refeições menores e mais frequentes — estômago nunca vazio por muito tempo</div>
+    <div class="gastrow"><span>✅</span> Mastigar devagar, sem pressa — ajuda muito na esofagite</div>
+  </div>
+
+  <div style="display:flex;gap:6px;margin-bottom:11px;overflow-x:auto;scrollbar-width:none;" id="weekSel"></div>
+  <div id="mealContent"></div>
+
+  <div class="suprec">
+    <div class="suprecttl">💊 Suplementos recomendados</div>
+    <div class="supitem">
+      <div class="supico">🟣</div>
+      <div class="supinf">
+        <div class="supinf-name">Vitamina D3 + K2</div>
+        <div class="supinf-why">Inverno Santiago = pouco sol. Essencial. Após refeição (não em jejum, protege estômago). Naturandes, Nutramerican ou farmácia.</div>
+        <span class="spr spr-hi">✦ Essencial</span>
+      </div>
+    </div>
+    <div class="supitem">
+      <div class="supico">🔵</div>
+      <div class="supinf">
+        <div class="supinf-name">Vitamina B12 (metilcobalamina)</div>
+        <div class="supinf-why">Essencial para vegetarianas. 1000mcg/dia. Dellanatura.cl ou farmácia. Pode ser sublingual — melhor absorção.</div>
+        <span class="spr spr-hi">✦ Essencial</span>
+      </div>
+    </div>
+    <div class="supitem">
+      <div class="supico">🟢</div>
+      <div class="supinf">
+        <div class="supinf-name">Proteína vegetal (The Good Veg)</div>
+        <div class="supinf-why">Marca chilena. Proteína de ervilha+arroz. Dissolver em água ou leite vegetal — não ácido. Tomar após treino ou lanche.</div>
+        <span class="spr spr-md">◆ Recomendado</span>
+      </div>
+    </div>
+    <div class="supitem">
+      <div class="supico">⚡</div>
+      <div class="supinf">
+        <div class="supinf-name">Creatina monoidratada</div>
+        <div class="supinf-why">Vegetarianas têm menos creatina muscular. 3-5g/dia com água. The Good Veg tem versão vegana. Atenção: pode causar leve desconforto gástrico no início — começar com 2g.</div>
+        <span class="spr spr-md">◆ Recomendado</span>
+      </div>
+    </div>
+    <div class="supitem">
+      <div class="supico">🌿</div>
+      <div class="supinf">
+        <div class="supinf-name">Ômega 3 de algas (vegano)</div>
+        <div class="supinf-why">Sem peixe. Anti-inflamatório — bom para gastrite também. Dellanatura.cl</div>
+        <span class="spr spr-lo">▸ Opcional útil</span>
+      </div>
+    </div>
+    <div class="supitem">
+      <div class="supico">🌱</div>
+      <div class="supinf">
+        <div class="supinf-name">Ferro + Vitamina C (avaliar)</div>
+        <div class="supinf-why">Vegetarianas podem ter menos ferro. Só suplementar se exame confirmar. Tomar longe do Pantoprazol (interfere absorção).</div>
+        <span class="spr spr-lo">▸ Checar exame</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB SONO -->
+<div class="sec" id="tab-sono">
+  <div class="slpdark">
+    <div class="slphdr">🌙 Horários de hoje</div>
+    <div class="slptimes">
+      <div class="slpbox"><div class="slpbox-lbl">Dormiu às</div><div class="slpbox-val" id="slpStart">22:30</div></div>
+      <div class="slpbox"><div class="slpbox-lbl">Acordou às</div><div class="slpbox-val" id="slpEnd">06:30</div></div>
+      <div class="slpbox"><div class="slpbox-lbl">Total</div><div class="slpbox-val" id="slpTotal">8h</div></div>
+    </div>
+    <button class="slpbtn" onclick="openSleep()">✏️ Editar horários</button>
+  </div>
+
+  <div class="cyclecrd">
+    <div class="cycletit">⏰ Ciclos ideais — acordar às 06:30 · trabalho 08h Chile</div>
+    <div style="font-size:12px;color:var(--mid);font-weight:600;margin-bottom:9px;">Atividade matinal 06:30–07:45 antes de começar. Ciclos de 1h30.</div>
+    <div class="cycleopt best"><div class="cdot"></div><div class="cinf"><div class="ctime">Dormir 22:30 · Acordar 06:30</div><div class="chrs">8h = 5 ciclos e meio — ideal</div></div><div class="cbdg">⭐ Melhor</div></div>
+    <div class="cycleopt best"><div class="cdot"></div><div class="cinf"><div class="ctime">Dormir 21:00 · Acordar 06:30</div><div class="chrs">7h30 = 5 ciclos completos</div></div><div class="cbdg">⭐ Ótimo</div></div>
+    <div class="cycleopt ok"><div class="cdot"></div><div class="cinf"><div class="ctime">Dormir 23:00 · Acordar 06:30</div><div class="chrs">7h30 = 5 ciclos — viável</div></div><div class="cbdg">✓ Bom</div></div>
+    <div class="cycleopt ok"><div class="cdot"></div><div class="cinf"><div class="ctime">Dormir 00:00 · Acordar 07:30</div><div class="chrs">7h30 = 5 ciclos — sem tempo matinal</div></div><div class="cbdg">⚠ Mínimo</div></div>
+    <div style="font-size:11px;color:var(--mid);font-weight:600;margin-top:7px;">💡 Melatonina + anticoncepcional à noite ajudam a regular o ciclo. Tome sempre no mesmo horário.</div>
+  </div>
+
+  <div class="morncrd">
+    <div class="morntit">🌅 Atividade matinal (06:30–07:45)</div>
+    <div class="mornopt" id="m-cam" onclick="selMorn('m-cam')"><div class="mornrad"></div><div class="morntxt">🚶‍♀️ Caminhada perto de casa</div><div class="morndur">20–30 min</div></div>
+    <div class="mornopt" id="m-liv" onclick="selMorn('m-liv')"><div class="mornrad"></div><div class="morntxt">📚 Ler um livro com chá</div><div class="morndur">30–45 min</div></div>
+    <div class="mornopt" id="m-puz" onclick="selMorn('m-puz')"><div class="mornrad"></div><div class="morntxt">🧩 Quebra-cabeça</div><div class="morndur">20–40 min</div></div>
+    <div class="mornopt" id="m-pin" onclick="selMorn('m-pin')"><div class="mornrad"></div><div class="morntxt">🎨 Pintura em tela</div><div class="morndur">20–40 min</div></div>
+    <div class="mornopt sel" id="m-ex" onclick="selMorn('m-ex')"><div class="mornrad"></div><div class="morntxt">💪 Exercício leve matinal</div><div class="morndur">10–20 min</div></div>
+  </div>
+
+  <div class="tip" style="background:linear-gradient(135deg,#2D1B69,#4A2080);">
+    <div class="tip-lbl">🌙 Ritual noturno</div>
+    <div class="tip-txt">Anticoncepcional + melatonina sempre no mesmo horário (22h?). Chá de camomila ou melissa 30 min antes. Esofagite: cabeça um pouco mais elevada ao dormir ajuda muito. Celular longe! 🐱</div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:13px;font-weight:700;margin-bottom:9px;">🌙 Checklist noturno</div>
+    <div class="hrow" id="sleep-tela" onclick="toggleH('sleep-tela')" style="margin-bottom:6px;box-shadow:none;border:1px solid var(--sand);">
+      <div class="hico">📵</div><div class="hin"><div class="hname">Celular longe da cama</div></div><div class="hchk">✓</div>
+    </div>
+    <div class="hrow" id="sleep-cha" onclick="toggleH('sleep-cha')" style="margin-bottom:6px;box-shadow:none;border:1px solid var(--sand);">
+      <div class="hico">🍵</div><div class="hin"><div class="hname">Chá relaxante tomado</div></div><div class="hchk">✓</div>
+    </div>
+    <div class="hrow" id="sleep-meds" onclick="toggleH('sleep-meds')" style="margin-bottom:0;box-shadow:none;border:1px solid var(--sand);">
+      <div class="hico">💊</div><div class="hin"><div class="hname">Anticoncepcional + melatonina</div></div><div class="hchk">✓</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- TAB PROG -->
+<div class="sec" id="tab-prog">
+  <div class="statsrow">
+    <div class="statcrd"><div style="font-size:18px;margin-bottom:3px;">🔥</div><div class="statnum" id="statDays">1</div><div class="statlbl">dias</div></div>
+    <div class="statcrd"><div style="font-size:18px;margin-bottom:3px;">💧</div><div class="statnum" id="statWater">0</div><div class="statlbl">litros</div></div>
+    <div class="statcrd"><div style="font-size:18px;margin-bottom:3px;">💪</div><div class="statnum" id="statWk">0</div><div class="statlbl">treinos</div></div>
+  </div>
+  <div class="slbl">Esta semana</div>
+  <div class="wkdots" id="wkdots"></div>
+  <div class="slbl">Histórico — últimos 30 dias</div>
+  <div class="card" style="padding:12px 14px;">
+    <div id="historyList"><div style="font-size:13px;color:var(--mid);font-weight:600;text-align:center;padding:16px;">Nenhum histórico ainda.<br>Volte amanhã! 🌱</div></div>
+  </div>
+
+  <div class="slbl">Seu perfil</div>
+  <div class="profcrd">
+    <div class="profrow"><span class="profkey">Nome</span><span class="profval">Larissa 🌿</span></div>
+    <div class="profrow"><span class="profkey">Idade</span><span class="profval">30 anos</span></div>
+    <div class="profrow"><span class="profkey">Alimentação</span><span class="profval">🥦 Vegetariana</span></div>
+    <div class="profrow"><span class="profkey">Saúde digestiva</span><span class="profval">Gastrite + Esofagite B</span></div>
+    <div class="profrow"><span class="profkey">Suplementos</span><span class="profval">D3 · B12 · Proteína</span></div>
+    <div class="profrow"><span class="profkey">Medicamentos</span><span class="profval">Pantoprazol · Levo · Probiótico · Anticonc. · Melatonina</span></div>
+    <div class="profrow"><span class="profkey">Plataforma</span><span class="profval">🔥 Queima Diária</span></div>
+    <div class="profrow"><span class="profkey">Cidade</span><span class="profval">🇨🇱 Santiago, Chile</span></div>
+    <div class="profrow"><span class="profkey">Trabalho</span><span class="profval">iFood remoto 🇧🇷</span></div>
+    <div class="profrow"><span class="profkey">Início</span><span class="profval" style="color:var(--terra);">Hoje! 🌱</span></div>
+  </div>
+  <div class="tip">
+    <div class="tip-lbl">💚 Lembre-se sempre</div>
+    <div class="tip-txt">Você tem gastrite, esofagite, está começando a se exercitar, longe do Brasil e criando novos hábitos. Isso é muito de uma vez. Vai devagar e seja gentil com você mesma. 🐱 A Nena aprova.</div>
+  </div>
+</div>
+
+</div>
+
+<!-- MODAL SONO -->
+<div class="moverlay" id="sleepModal" onclick="closeSleep(event)">
+  <div class="modal">
+    <div class="mtit">🌙 Horários de sono</div>
+    <div class="trow">
+      <div class="tg"><div class="tg-lbl">Dormiu às</div><input type="time" id="inStart" value="22:30"></div>
+      <div class="tg"><div class="tg-lbl">Acordou às</div><input type="time" id="inEnd" value="06:30"></div>
+    </div>
+    <button class="msave" onclick="saveSleep()">Salvar</button>
+  </div>
+</div>
+
+<!-- MODAL SETS -->
+<div class="moverlay" id="setsModal" onclick="closeSetsModal(event)">
+  <div class="modal">
+    <div class="mtit">Séries / Duração</div>
+    <div class="setsrow" id="setsOpts"></div>
+    <button class="msave" onclick="saveSets()">Salvar</button>
+  </div>
+</div>
+
+<script>
+// --- localStorage helpers ---
+function save(key, val) { try { localStorage.setItem('lr_' + key, JSON.stringify(val)); } catch(e){} }
+function load(key, def) { try { var v = localStorage.getItem('lr_' + key); return v !== null ? JSON.parse(v) : def; } catch(e){ return def; } }
+
+// --- Today key ---
+function todayKey() {
+  var d = new Date();
+  return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+}
+
+// --- Auto-reset at new day, archive yesterday ---
+var savedDay = load('day', null);
+var TODAY = todayKey();
+if (savedDay !== TODAY) {
+  if (savedDay) {
+    var hist = load('history', []);
+    hist.unshift({
+      date: savedDay,
+      habits: load('habits', {}),
+      meds: load('meds', {}),
+      sups: load('sups', {}),
+      water: load('water', 0),
+      workoutsDone: load('workoutsDone', 0),
+      sleep: load('sleep', {start:'22:30',end:'06:30',total:'8h'})
+    });
+    if (hist.length > 90) { hist = hist.slice(0, 90); }
+    save('history', hist);
+  }
+  save('day', TODAY);
+  save('habits', {});
+  save('meds', {});
+  save('sups', {});
+  save('water', 0);
+  save('workoutsDone', 0);
+}
+
+// --- STATE (loaded from storage) ---
+var habits = load('habits', {});
+var meds = load('meds', {});
+var sups = load('sups', {});
+var water = load('water', 0);
+var workouts = [];
+var setsTarget = {di:0, ei:0};
+var pendingSet = '';
+var currentWeek = 0;
+
+// --- DATE ---
+var DAYS = ['dom','seg','ter','qua','qui','sex','sáb'];
+var MONTHS = ['jan','fev','mar','abr','mai','jun','jul','ago','set','out','nov','dez'];
+var now = new Date();
+document.getElementById('datechip').textContent = DAYS[now.getDay()] + ', ' + now.getDate() + ' ' + MONTHS[now.getMonth()];
+var hr = now.getHours();
+var grt = hr < 12 ? 'Bom dia' : (hr < 18 ? 'Boa tarde' : 'Boa noite');
+document.getElementById('subgreet').textContent = grt + ', Larissa! ☀️';
+
+// --- TABS ---
+function switchTab(id, el) {
+  var secs = document.querySelectorAll('.sec');
+  for (var i = 0; i < secs.length; i++) { secs[i].classList.remove('active'); }
+  var tabs = document.querySelectorAll('.tab');
+  for (var i = 0; i < tabs.length; i++) { tabs[i].classList.remove('active'); }
+  document.getElementById('tab-' + id).classList.add('active');
+  el.classList.add('active');
+}
+
+// --- TOGGLE HABIT ---
+function toggleH(id) {
+  habits[id] = !habits[id];
+  var el = document.getElementById(id);
+  if (habits[id]) { el.classList.add('done'); } else { el.classList.remove('done'); }
+  save('habits', habits);
+  updateRing();
+}
+
+// --- TOGGLE MED ---
+function toggleMed(id) {
+  meds[id] = !meds[id];
+  var el = document.getElementById(id);
+  if (meds[id]) { el.classList.add('done'); } else { el.classList.remove('done'); }
+  save('meds', meds);
+  updateRing();
+}
+
+// --- TOGGLE SUP ---
+function toggleSup(id) {
+  sups[id] = !sups[id];
+  var el = document.getElementById(id);
+  if (sups[id]) { el.classList.add('done'); } else { el.classList.remove('done'); }
+  save('sups', sups);
+  updateRing();
+}
+
+// --- WATER ---
+var glassWrap = document.getElementById('glassWrap');
+for (var i = 0; i < 8; i++) {
+  (function(idx) {
+    var g = document.createElement('div');
+    g.className = 'glass';
+    g.textContent = '💧';
+    g.onclick = function() {
+      water = (water === idx + 1) ? idx : idx + 1;
+      var gs = document.querySelectorAll('.glass');
+      for (var j = 0; j < gs.length; j++) {
+        if (j < water) { gs[j].classList.add('filled'); } else { gs[j].classList.remove('filled'); }
+      }
+      document.getElementById('waterNum').textContent = water;
+      var liters = (water * 0.25).toFixed(2).replace(/\.?0+$/, '');
+      document.getElementById('statWater').textContent = liters;
+      save('water', water);
+      updateRing();
+    };
+    glassWrap.appendChild(g);
+  })(i);
+}
+// Restore water UI
+(function() {
+  var gs = document.querySelectorAll('.glass');
+  for (var j = 0; j < gs.length; j++) {
+    if (j < water) { gs[j].classList.add('filled'); } else { gs[j].classList.remove('filled'); }
+  }
+  document.getElementById('waterNum').textContent = water;
+  var liters = (water * 0.25).toFixed(2).replace(/\.?0+$/, '');
+  document.getElementById('statWater').textContent = liters;
+})();
+
+// --- RING ---
+function updateRing() {
+  var hcount = 0;
+  for (var k in habits) { if (habits[k]) hcount++; }
+  var mcount = 0;
+  for (var k in meds) { if (meds[k]) mcount++; }
+  var scount = 0;
+  for (var k in sups) { if (sups[k]) scount++; }
+  var wok = water >= 8 ? 1 : 0;
+  var wkdone = 0;
+  for (var i = 0; i < workouts.length; i++) { if (workouts[i].done) { wkdone = 1; break; } }
+  var total = hcount + mcount + scount + wok + wkdone;
+  var max = 8 + 5 + 3 + 1 + 1;
+  var pct = Math.round(total / max * 100);
+  var circ = 238.76;
+  var offset = circ - (circ * pct / 100);
+  var fill = document.getElementById('ringFill');
+  fill.style.strokeDashoffset = offset;
+  var color = pct < 30 ? '#8AA87A' : (pct < 70 ? '#D9956E' : '#5E7A50');
+  fill.style.stroke = color;
+  document.getElementById('ringPct').textContent = pct + '%';
+  var msgs = [[0,'Vamos lá, Larissa! 🌱'],[20,'Começando bem! 💪'],[40,'Já tá rolando 🔥'],[60,'Mais da metade! 🌿'],[80,'Quase lá! ⭐'],[100,'Dia completo! 🎉 🐱']];
+  var msg = msgs[0][1];
+  for (var i = msgs.length - 1; i >= 0; i--) { if (pct >= msgs[i][0]) { msg = msgs[i][1]; break; } }
+  document.getElementById('ringMsg').textContent = msg;
+}
+
+// --- RESTORE CHECKMARKS ON LOAD ---
+(function() {
+  var allH = ['h-treino','h-manha','h-comida','h-sono','h-sol','sleep-tela','sleep-cha','sleep-meds'];
+  for (var i = 0; i < allH.length; i++) {
+    if (habits[allH[i]]) { var el = document.getElementById(allH[i]); if(el) el.classList.add('done'); }
+  }
+  var allM = ['med-panto','med-levo','med-prob','med-anti','med-mela'];
+  for (var i = 0; i < allM.length; i++) {
+    if (meds[allM[i]]) { var el = document.getElementById(allM[i]); if(el) el.classList.add('done'); }
+  }
+  var allS = ['sup-d3','sup-b12','sup-prot'];
+  for (var i = 0; i < allS.length; i++) {
+    if (sups[allS[i]]) { var el = document.getElementById(allS[i]); if(el) el.classList.add('done'); }
+  }
+  updateRing();
+})();
+
+// --- WEEK DOTS ---
+var wkdots = document.getElementById('wkdots');
+var todayIdx = now.getDay();
+for (var i = 0; i < 7; i++) {
+  var div = document.createElement('div'); div.className = 'wday';
+  var dotClass = 'wddot';
+  if (i === todayIdx) { dotClass += ' today'; } else if (i < todayIdx) { dotClass += ' done'; }
+  var dotContent = i === todayIdx ? '🌱' : (i < todayIdx ? '✓' : '');
+  div.innerHTML = '<div class="wdlbl">' + DAYS[i].toUpperCase() + '</div><div class="' + dotClass + '">' + dotContent + '</div>';
+  wkdots.appendChild(div);
+}
+
+// --- WORKOUT EDITOR ---
+// Load saved workouts
+var savedWorkouts = load('workouts', null);
+
+var DAYDEFS = [
+  {tag:'SEG',title:'Segunda-feira',sub:'Adicione seus exercícios'},
+  {tag:'TER',title:'Terça-feira',sub:'Adicione seus exercícios'},
+  {tag:'QUA',title:'Quarta-feira',sub:'Adicione seus exercícios'},
+  {tag:'QUI',title:'Quinta-feira',sub:'Adicione seus exercícios'},
+  {tag:'SEX',title:'Sexta-feira',sub:'Adicione seus exercícios'},
+  {tag:'SÁB',title:'Sábado',sub:'Adicione seus exercícios'},
+  {tag:'DOM',title:'Domingo',sub:'Descanso ou ativo leve'},
+];
+for (var i = 0; i < 7; i++) {
+  if (savedWorkouts && savedWorkouts[i]) {
+    workouts.push(savedWorkouts[i]);
+  } else {
+    workouts.push({exercises:[], done:false});
+  }
+}
+// Restore workout count stat
+document.getElementById('statWk').textContent = load('workoutsDone', 0);
+
+function buildGrid() {
+  var grid = document.getElementById('weekGrid');
+  grid.innerHTML = '';
+  for (var di = 0; di < 7; di++) {
+    (function(dayIdx) {
+      var wk = workouts[dayIdx];
+      var def = DAYDEFS[dayIdx];
+      var card = document.createElement('div');
+      card.className = 'daycrd' + (wk.done ? ' dd' : '');
+      card.id = 'dc-' + dayIdx;
+
+      var subtitle = wk.exercises.length > 0
+        ? wk.exercises.map(function(e){return e.name;}).filter(function(n){return n;}).join(' · ') || def.sub
+        : def.sub;
+
+      var exHtml = '';
+      for (var ei = 0; ei < wk.exercises.length; ei++) {
+        var ex = wk.exercises[ei];
+        exHtml += '<div class="exitem">' +
+          '<input type="text" placeholder="Ex: Agachamento" value="' + (ex.name||'') + '" onchange="updEx(' + dayIdx + ',' + ei + ',this.value)">' +
+          '<span class="exsets" onclick="openSets(' + dayIdx + ',' + ei + ')">' + ex.sets + '</span>' +
+          '<button class="exdel" onclick="remEx(' + dayIdx + ',' + ei + ')">×</button>' +
+          '</div>';
+      }
+
+      card.innerHTML =
+        '<div class="dayhdr" onclick="toggleDay(' + dayIdx + ')">' +
+          '<div class="daytag">' + def.tag + '</div>' +
+          '<div class="daytit"><div class="daytit-main">' + def.title + '</div><div class="daytit-sub">' + subtitle + '</div></div>' +
+          (wk.done ? '<span style="font-size:18px;">✅</span>' : '') +
+          '<div class="dayarr">▾</div>' +
+        '</div>' +
+        '<div class="daybody">' +
+          '<div class="exlist" id="exlist-' + dayIdx + '">' + exHtml + '</div>' +
+          '<button class="addbtn" onclick="addEx(' + dayIdx + ')">+ Adicionar exercício</button>' +
+          '<button class="donebtn" onclick="toggleDayDone(' + dayIdx + ')">' + (wk.done ? '↩ Desfazer' : '✅ Marcar como feito') + '</button>' +
+        '</div>';
+
+      grid.appendChild(card);
+    })(di);
+  }
+}
+
+function toggleDay(di) {
+  var card = document.getElementById('dc-' + di);
+  if (card.classList.contains('open')) { card.classList.remove('open'); } else { card.classList.add('open'); }
+}
+
+function addEx(di) {
+  workouts[di].exercises.push({name:'', sets:'3x10'});
+  save('workouts', workouts);
+  buildGrid();
+  var card = document.getElementById('dc-' + di);
+  card.classList.add('open');
+  var inputs = document.getElementById('exlist-' + di).querySelectorAll('input');
+  if (inputs.length > 0) { inputs[inputs.length-1].focus(); }
+}
+
+function remEx(di, ei) {
+  workouts[di].exercises.splice(ei, 1);
+  save('workouts', workouts);
+  buildGrid();
+  document.getElementById('dc-' + di).classList.add('open');
+}
+
+function updEx(di, ei, val) {
+  workouts[di].exercises[ei].name = val;
+  save('workouts', workouts);
+}
+
+function toggleDayDone(di) {
+  workouts[di].done = !workouts[di].done;
+  var count = 0;
+  for (var i = 0; i < workouts.length; i++) { if (workouts[i].done) count++; }
+  document.getElementById('statWk').textContent = count;
+  save('workoutsDone', count);
+  save('workouts', workouts);
+  buildGrid();
+  updateRing();
+}
+
+var SETS_OPTS = ['1x10','2x10','3x10','3x12','3x15','4x10','4x12','5x5','2x20','AMRAP','15 min','20 min','30 min','45 min'];
+
+function openSets(di, ei) {
+  setsTarget = {di:di, ei:ei};
+  var current = workouts[di].exercises[ei].sets;
+  var container = document.getElementById('setsOpts');
+  container.innerHTML = '';
+  for (var i = 0; i < SETS_OPTS.length; i++) {
+    (function(opt) {
+      var chip = document.createElement('div');
+      chip.className = 'setchip' + (opt === current ? ' sel' : '');
+      chip.textContent = opt;
+      chip.onclick = function() {
+        var chips = document.querySelectorAll('.setchip');
+        for (var j = 0; j < chips.length; j++) { chips[j].classList.remove('sel'); }
+        chip.classList.add('sel');
+        pendingSet = opt;
+      };
+      container.appendChild(chip);
+    })(SETS_OPTS[i]);
+  }
+  document.getElementById('setsModal').classList.add('open');
+}
+
+function saveSets() {
+  if (pendingSet) {
+    workouts[setsTarget.di].exercises[setsTarget.ei].sets = pendingSet;
+    save('workouts', workouts);
+    buildGrid();
+    document.getElementById('dc-' + setsTarget.di).classList.add('open');
+  }
+  document.getElementById('setsModal').classList.remove('open');
+}
+
+function closeSetsModal(e) {
+  if (e.target.id === 'setsModal') { document.getElementById('setsModal').classList.remove('open'); }
+}
+
+buildGrid();
+
+// --- MEAL PLAN ---
+var PLAN = {
+  'Jun · S1': {
+    note: '🌿 Inverno · Gastrite adaptado · Temporada: brócoli, coliflor, zanahoria, puerro, palta, naranja, kiwi, mandarina',
+    days: [
+      {day:'Seg', meals:[
+        {t:'Café',h:'07h',d:'Aveia com leche vegetal (LoncoLeche) + banana amassada + 1 ovo cozido. Pantoprazol 30 min antes.',p:'~18g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Lentejas guisadas suaves + arroz integral + brócoli al vapor + azeite. Levogastrol + Probiótico.',p:'~22g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Kiwi + punhado de castanhas ou amêndoas. Shake proteico The Good Veg com água.',p:'~22g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Sopa crema de zanahoria + tofu macio salteado sem pimenta. Jantar ANTES das 20h30.',p:'~18g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Ter', meals:[
+        {t:'Café',h:'07h',d:'Tostadas integrais + palta amassada + ovo pochê. Suave, sem tomate cru.',p:'~16g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Garbanzos com espinaca salteada + quinoa + zanahoria cocida. Levogastrol + Probiótico.',p:'~24g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Pera + pasta de amendoim sem açúcar (1 colher).',p:'~7g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Cazuela suave de verduras (zapallo, papa, zanahoria, puerro) + porotos blancos.',p:'~16g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qua', meals:[
+        {t:'Café',h:'07h',d:'Granola caseira (aveia + castanhas) + iogurte grego natural + kiwi.',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Bowl quinoa + tofu grillado suave + palta + folhas verdes + azeite.',p:'~26g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake vegetal The Good Veg + banana.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Sopa de lentejas vermelhas (mais suaves) com couve e cenoura.',p:'~18g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qui', meals:[
+        {t:'Café',h:'07h',d:'2 ovos mexidos suaves + tostada integral + chá de camomila.',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Hamburguesa Leburguers (legumbres) em pão integral + salada de hojas verdes.',p:'~20g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Maçã assada com canela + castanhas.',p:'~5g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Arroz integral + brócoli al vapor + tofu grillado + azeite de oliva.',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Sex', meals:[
+        {t:'Café',h:'07h',d:'Panqueca de aveia (aveia + ovo + leche vegetal) + banana + mel.',p:'~16g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Ensalada tibia de garbanzos + papa cocida + cebolla caramelizada + aceite.',p:'~20g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake proteico + pera.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Ramen vegetal suave: caldo de verduras + tofu + zanahoria + nori.',p:'~18g prot.',w:'⚠ Não deitar logo'},
+      ]},
+    ]
+  },
+  'Jun · S2': {
+    note: '🌿 Semana 2 · Variedade · Mesmos cuidados com gastrite · Proteína ~80-100g/dia',
+    days: [
+      {day:'Seg', meals:[
+        {t:'Café',h:'07h',d:'Smoothie verde suave: espinaca + banana + leche aveia + 1 scoop proteína (sem ácido).',p:'~28g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Cazuela de porotos com verduras de temporada + arroz integral.',p:'~20g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Palitos de zanahoria cocida + hummus suave (garbanzos sem limão excessivo).',p:'~8g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Salteado de tofu + brócoli + ajo cocido + arroz integral.',p:'~22g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Ter', meals:[
+        {t:'Café',h:'07h',d:'Aveia noturna (preparada na véspera) + chia + banana + canela.',p:'~12g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Ensalada tibia de lentejas + batata doce al horno + folhas verdes.',p:'~24g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Iogurte grego natural + granola + mandarina.',p:'~12g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Wraps integrais com Mister Veggie (legumbres) + folhas + palta.',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qua', meals:[
+        {t:'Café',h:'07h',d:'Tostadas + palta + 2 ovos cozidos + chá erva-doce.',p:'~18g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Not Burger (NotCo) + batata doce + salada de hojas.',p:'~22g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Chá + galletas de arroz + pasta de amendoim.',p:'~8g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Sopa crema de zapallo + garbanzos tostados suaves no forno.',p:'~15g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qui', meals:[
+        {t:'Café',h:'07h',d:'Omelete de 2 ovos + espinaca + pão integral.',p:'~16g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Bowl de arroz yamani + edamame + zanahoria + molho de tahini suave.',p:'~24g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake vegetal The Good Veg + kiwi.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Quiche suave de espinaca e queijo com massa integral.',p:'~18g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Sex', meals:[
+        {t:'Café',h:'07h',d:'Granola + leche vegetal + palta tostada.',p:'~12g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Bowl proteico: quinoa + porotos + tofu grillado + verduras assadas.',p:'~28g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Maçã + nozes.',p:'~5g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Dhal suave de lentilhas vermelhas com cúrcuma + arroz basmati.',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+    ]
+  },
+  'Jul · S3': {
+    note: '🍊 Julho · Temporada: naranja, kiwi, mandarina, palta, zapallo, brócoli, coliflor, alcachofa. Mais variedade!',
+    days: [
+      {day:'Seg', meals:[
+        {t:'Café',h:'07h',d:'Panquecas de aveia + banana amassada + mel + leche vegetal.',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Sopa de alcachofa + porotos blancos + pão integral suave.',p:'~18g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake The Good Veg + mandarina.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Coliflor assada no forno + garbanzos especiados suaves + quinoa.',p:'~22g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Ter', meals:[
+        {t:'Café',h:'07h',d:'Iogurte grego + granola caseira + kiwi.',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Tofu grillado + brócoli al vapor + arroz yamani + zanahoria.',p:'~26g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Naranja (mastigue, não suco puro) + punhado de nozes.',p:'~5g prot.',w:'⚠ Suco cítrico em excesso irrita'},
+        {t:'Jant',h:'19h30',d:'Cazuela vegetariana suave (zapallo, papa, zanahoria, porotos).',p:'~18g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qua', meals:[
+        {t:'Café',h:'07h',d:'Omelete vegetal suave (2 ovos + espinaca cozida) + pão integral.',p:'~16g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Ensalada tibia de garbanzos + palta + zanahoria cocida + azeite.',p:'~20g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Pera + pasta de amêndoa.',p:'~6g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Arroz integral + tofu + edamame + molho suave de shoyu.',p:'~22g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qui', meals:[
+        {t:'Café',h:'07h',d:'Aveia + banana + leche aveia + chia sementes.',p:'~10g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Lentejas suaves com verduras (zanahoria, apio, puerro) + arroz integral.',p:'~24g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake vegetal + kiwi.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Sopa crema de brócoli suave + tostada integral com queijo.',p:'~16g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Sex', meals:[
+        {t:'Café',h:'07h',d:'Smoothie bowl: banana + frutos rojos congelados + granola.',p:'~10g prot.',w:'⚠ Frutas vermelhas com moderação'},
+        {t:'Almç',h:'13h',d:'Not Burger + batata doce al horno + salada de hojas verdes.',p:'~22g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Chá morno + galletas com hummus suave.',p:'~8g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Chili suave de porotos negros + arroz integral (sem pimenta).',p:'~22g prot.',w:'⚠ Não deitar logo'},
+      ]},
+    ]
+  },
+  'Jul · S4': {
+    note: '🟢 Semana 4 · Consolidação · Aumentar proteína pós-treino · Corpo adaptando ao exercício',
+    days: [
+      {day:'Seg', meals:[
+        {t:'Café',h:'07h',d:'Tostadas + palta + 2 ovos pochê + chá morno.',p:'~18g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Bowl: quinoa + porotos + tofu + verduras assadas suaves.',p:'~28g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake vegetal The Good Veg + fruta da temporada.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Sopa de miso suave + tofu sedoso + zanahoria + arroz.',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Ter', meals:[
+        {t:'Café',h:'07h',d:'Parfait: iogurte grego + granola + kiwi em camadas.',p:'~15g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Taco de coliflor assada + garbanzos + molho de iogurte + tortilla integral.',p:'~18g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Maçã + maní tostado sem sal.',p:'~7g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Hamburguesa Leburguers + ensalada tibia de lentejas.',p:'~24g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qua', meals:[
+        {t:'Café',h:'07h',d:'Panqueca proteica: aveia + ovo + banana + 1 scoop proteína.',p:'~24g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Arroz integral + feijão preto bem cozido + couve refogada suave.',p:'~20g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake vegetal + mandarina.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Ensopado de garbanzos com espinaca e tomate (cozido, não cru).',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qui', meals:[
+        {t:'Café',h:'07h',d:'Aveia com leche vegetal + castanhas + banana.',p:'~12g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Salada de quinoa morna + tofu marinado + palta + zanahoria cocida.',p:'~26g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Barra proteica vegana (Dellanatura) ou iogurte + fruta.',p:'~12g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Sopa crema de zapallo suave + porotos blancos.',p:'~18g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Sex', meals:[
+        {t:'Café',h:'07h',d:'Tostadas + queijo suave + nozes + mel.',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Feijoada vegetariana suave (feijão + legumes + couve + arroz).',p:'~22g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake + kiwi.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Pizza integral caseira com mozzarella suave + tofu + espinaca.',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+    ]
+  },
+  'Ago · S5': {
+    note: '❄️ Agosto · Final do inverno · Temporada: naranja, kiwi, palta, brócoli, espinaca, zapallo. Primavera chegando!',
+    days: [
+      {day:'Seg', meals:[
+        {t:'Café',h:'07h',d:'Aveia noturna + chia + kiwi + amêndoas laminadas.',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Lentejas con espinaca cocida + quinoa + pão integral.',p:'~26g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake The Good Veg + maçã.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Wok suave de tofu + brócoli + zanahoria + arroz yamani.',p:'~24g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Ter', meals:[
+        {t:'Café',h:'07h',d:'Smoothie suave: espinaca + banana + leche aveia + proteína.',p:'~28g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Bowl: garbanzos + pepino (com moderação) + queijo suave + arroz.',p:'~22g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Palta tostada + naranja (morder, não suco puro).',p:'~6g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Curry suave de batata doce + garbanzos + leche coco light (sem pimenta).',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qua', meals:[
+        {t:'Café',h:'07h',d:'Tostadas integrais + hummus suave + 2 ovos cozidos + chá.',p:'~20g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Cazuela de porotos con zapallo y zanahoria + arroz.',p:'~22g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Iogurte grego + granola + kiwi.',p:'~12g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Ramen vegetal suave com missô + tofu + zanahoria + nori.',p:'~22g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Qui', meals:[
+        {t:'Café',h:'07h',d:'Panquecas de aveia suaves + banana + mel de agave.',p:'~12g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Ensalada caliente de lentejas + batata al horno + folhas verdes.',p:'~24g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Shake The Good Veg + banana.',p:'~25g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Not Burger + batata doce + salada de alcachofa cozida.',p:'~22g prot.',w:'⚠ Não deitar logo'},
+      ]},
+      {day:'Sex', meals:[
+        {t:'Café',h:'07h',d:'Granola + iogurte grego + naranja (em pedaços, não suco).',p:'~14g prot.',w:''},
+        {t:'Almç',h:'13h',d:'Falafel caseiro suave + pão integral + tabule de quinoa.',p:'~24g prot.',w:''},
+        {t:'Lanch',h:'16h',d:'Chá morno + mix de oleaginosas.',p:'~8g prot.',w:''},
+        {t:'Jant',h:'19h30',d:'Berenjenas assadas + garbanzos suaves + ensalada de hojas.',p:'~20g prot.',w:'⚠ Não deitar logo'},
+      ]},
+    ]
+  }
+};
+
+var planKeys = Object.keys(PLAN);
+
+function buildWeekSel() {
+  var sel = document.getElementById('weekSel');
+  sel.innerHTML = '';
+  for (var i = 0; i < planKeys.length; i++) {
+    (function(idx) {
+      var btn = document.createElement('button');
+      btn.className = 'wselbtn' + (idx === currentWeek ? ' active' : '');
+      btn.textContent = planKeys[idx];
+      btn.onclick = function() { currentWeek = idx; buildWeekSel(); buildMealPlan(); };
+      sel.appendChild(btn);
+    })(i);
+  }
+}
+
+function buildMealPlan() {
+  var plan = PLAN[planKeys[currentWeek]];
+  var el = document.getElementById('mealContent');
+  el.innerHTML = '<div style="background:var(--olivxl);border-radius:13px;padding:11px 13px;margin-bottom:10px;font-size:12px;font-weight:600;color:var(--olive);">' + plan.note + '</div>';
+  for (var d = 0; d < plan.days.length; d++) {
+    var day = plan.days[d];
+    var card = document.createElement('div');
+    card.className = 'mpcard';
+    var html = '<div class="mpday">🌱 ' + day.day + '</div>';
+    for (var m = 0; m < day.meals.length; m++) {
+      var meal = day.meals[m];
+      html += '<div class="mrow">' +
+        '<div class="mtimecol"><div class="mtimelbl">' + meal.t + '</div><div class="mtimeval">' + meal.h + '</div></div>' +
+        '<div class="mdesc">' + meal.d +
+          '<br><span class="mprot">' + meal.p + '</span>' +
+          (meal.w ? ' <span class="mwarn">' + meal.w + '</span>' : '') +
+        '</div></div>';
+    }
+    card.innerHTML = html;
+    el.appendChild(card);
+  }
+}
+
+buildWeekSel();
+buildMealPlan();
+
+// --- SLEEP ---
+function openSleep() { document.getElementById('sleepModal').classList.add('open'); }
+function closeSleep(e) { if (e.target.id === 'sleepModal') { document.getElementById('sleepModal').classList.remove('open'); } }
+function saveSleep() {
+  var s = document.getElementById('inStart').value;
+  var e = document.getElementById('inEnd').value;
+  document.getElementById('slpStart').textContent = s;
+  document.getElementById('slpEnd').textContent = e;
+  var sp = s.split(':'); var ep = e.split(':');
+  var diff = (parseInt(ep[0])*60+parseInt(ep[1])) - (parseInt(sp[0])*60+parseInt(sp[1]));
+  if (diff < 0) { diff += 1440; }
+  var h = Math.floor(diff/60); var m = diff % 60;
+  var total = m > 0 ? h + 'h' + m : h + 'h';
+  document.getElementById('slpTotal').textContent = total;
+  save('sleep', {start:s, end:e, total:total});
+  document.getElementById('sleepModal').classList.remove('open');
+}
+// Restore sleep UI
+(function() {
+  var slp = load('sleep', {start:'22:30',end:'06:30',total:'8h'});
+  document.getElementById('slpStart').textContent = slp.start;
+  document.getElementById('slpEnd').textContent = slp.end;
+  document.getElementById('slpTotal').textContent = slp.total;
+  document.getElementById('inStart').value = slp.start;
+  document.getElementById('inEnd').value = slp.end;
+})();
+
+// --- MORNING SELECTION ---
+function selMorn(id) {
+  var opts = document.querySelectorAll('.mornopt');
+  for (var i = 0; i < opts.length; i++) { opts[i].classList.remove('sel'); }
+  document.getElementById(id).classList.add('sel');
+  save('morning', id);
+}
+// Restore morning choice
+(function() {
+  var m = load('morning', 'm-ex');
+  var opts = document.querySelectorAll('.mornopt');
+  for (var i = 0; i < opts.length; i++) { opts[i].classList.remove('sel'); }
+  var el = document.getElementById(m);
+  if (el) { el.classList.add('sel'); }
+})();
+
+// --- STREAK from history ---
+(function() {
+  var hist = load('history', []);
+  // Count consecutive days with at least 1 habit done
+  var streak = 0;
+  var checkDate = new Date();
+  for (var i = 0; i < hist.length; i++) {
+    checkDate.setDate(checkDate.getDate() - 1);
+    var expectedKey = checkDate.getFullYear() + '-' + (checkDate.getMonth()+1) + '-' + checkDate.getDate();
+    if (hist[i].date === expectedKey) {
+      var anyDone = false;
+      for (var k in hist[i].habits) { if (hist[i].habits[k]) { anyDone = true; break; } }
+      if (!anyDone) { for (var k in hist[i].meds) { if (hist[i].meds[k]) { anyDone = true; break; } } }
+      if (anyDone) { streak++; } else { break; }
+    } else { break; }
+  }
+  // Count today too
+  var todayAny = false;
+  for (var k in habits) { if (habits[k]) { todayAny = true; break; } }
+  if (!todayAny) { for (var k in meds) { if (meds[k]) { todayAny = true; break; } } }
+  if (todayAny) { streak++; }
+  document.getElementById('statDays').textContent = streak || 1;
+})();
+
+// --- HISTORY in progress tab ---
+(function() {
+  var hist = load('history', []);
+  var container = document.getElementById('historyList');
+  if (!container) { return; }
+  if (hist.length === 0) {
+    container.innerHTML = '<div style="font-size:13px;color:var(--mid);font-weight:600;text-align:center;padding:16px;">Nenhum histórico ainda.<br>Volte amanhã! 🌱</div>';
+    return;
+  }
+  var html = '';
+  for (var i = 0; i < Math.min(hist.length, 30); i++) {
+    var day = hist[i];
+    var hCount = 0; for (var k in day.habits) { if (day.habits[k]) hCount++; }
+    var mCount = 0; for (var k in day.meds) { if (day.meds[k]) mCount++; }
+    var sCount = 0; for (var k in day.sups) { if (day.sups[k]) sCount++; }
+    var total = hCount + mCount + sCount + (day.water >= 8 ? 1 : 0) + (day.workoutsDone > 0 ? 1 : 0);
+    var max = 18;
+    var pct = Math.min(Math.round(total / max * 100), 100);
+    var barColor = pct >= 70 ? 'var(--gok)' : (pct >= 40 ? 'var(--gold)' : 'var(--terra)');
+    var parts = day.date.split('-');
+    var label = parts[2] + '/' + parts[1];
+    html += '<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--sand);">' +
+      '<div style="width:38px;font-size:12px;font-weight:700;color:var(--mid);flex-shrink:0;">' + label + '</div>' +
+      '<div style="flex:1;background:var(--sand);border-radius:20px;height:10px;overflow:hidden;">' +
+        '<div style="height:10px;border-radius:20px;background:' + barColor + ';width:' + pct + '%;transition:width .4s;"></div>' +
+      '</div>' +
+      '<div style="width:34px;font-size:11px;font-weight:800;color:var(--mid);text-align:right;">' + pct + '%</div>' +
+      '<div style="font-size:14px;">' + (day.water || 0) + '💧</div>' +
+    '</div>';
+  }
+  container.innerHTML = html;
+})();
+
+// --- TIPS ---
+var TIPS = [
+  'Pantoprazol sempre em jejum ao acordar — espera 30 min antes de comer. Isso é o mais importante pra gastrite! 🌿',
+  'Esofagite: nunca deitar menos de 2-3h após comer. Jantar cedo é um hábito que vai fazer diferença real.',
+  'Você tem dificuldade em criar hábitos — isso é 100% normal. Cada check conta, mesmo nos dias difíceis. 🐱',
+  'Inverno em Santiago: mesmo tempo nublado, 15 min lá fora ajudam no D3. O sol existe mesmo nas nuvens!',
+  'Chás que são bons pra gastrite: camomila, erva-doce, gengibre suave, melissa. Você já toma — ótimo! 🍵',
+  'A bicicleta em casa é um presente. Nos dias de preguiça, 15 min nela já mantém o hábito.',
+  'Legumbres chilenas são das melhores do mundo. Lentejas, garbanzos, porotos — proteína barata e boa! 🫘',
+  'Queima Diária + bicicleta + bandas: você tem tudo que precisa. Não subestime o que já tem em casa.',
+];
+document.getElementById('dailyTip').textContent = TIPS[Math.floor(Math.random() * TIPS.length)];
+</script>
+</body>
+</html>
